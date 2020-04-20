@@ -1,0 +1,4 @@
+RewriteEngine on
+rewritecond %{http_host} ^www.domainname.de [or]
+rewritecond %{http_host} ^domainname.de
+rewriterule ^([0-9]{1,7})$ /shorty.php?id=$1 [NC,L]
